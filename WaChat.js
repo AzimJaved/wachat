@@ -48,4 +48,5 @@ exports.WaChat = (name) => {
     var chatBody = chatHTML(chatJson)
     var fullHTML = getHTML(chatBody)
     fs.writeFileSync('./chat/chats/'+name+'.html',fullHTML)
+    console.log("File written to /chat/chats/"+name+'.html')
 }
